@@ -146,6 +146,13 @@ Short was made by a person and an AI working together.
 - Designed the icon (an original drawing, `assets/short.ico`)
 - Wrote this README and the additions to the specification
 
+## Acknowledgments
+
+- **Claude (Anthropic)**: Short's code, icon and documentation were written by Claude, an AI model by Anthropic, working with Srećko in one conversation. Claude reviewed the specification, pointed out the technical pitfalls (UAC split tokens and per-session DosDevices, `DefineDosDevice` shadowing, Explorer's `"R:\"` quoting, the Recycle Bin risk), and wrote the implementation. The idea, the specification, the decisions and the testing on Windows 11 are Srećko's.
+- **The old `subst` command**: Short is a safe, one-click wrapper around an idea that has been in Windows since DOS.
+- **.NET NativeAOT**: it makes Short a single small executable with no runtime dependency.
+- **CIRLAT**, the sister project ([sreckojovancevic/cirlate](https://github.com/sreckojovancevic/cirlate)): bulk-renames Cyrillic/Latin file names to ASCII. It's another way to deal with problem file names on Windows.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
